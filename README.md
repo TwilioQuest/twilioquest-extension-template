@@ -8,9 +8,10 @@ Base project for creating your own TwilioQuest extension!
 4. Create a directory anywhere on your computer (that TwilioQuest has access to) where you want to store your extensions
 5. Get the full file path to this directory
 6. Paste this into the field in the Extensions menu
-7. git clone this project into your new folder
-8. Restart TwilioQuest
-9. You should now see `twilioquest-extension` (or whatever other extensions you have installed) listed in the Extensions menu
+7. fork this project to your own GitHub account
+8. git clone your fork into your new local folder
+9. Restart TwilioQuest
+10. You should now see `twilioquest-extension` (or whatever other extensions you have installed) listed in the Extensions menu
 
 ## Some reference extensions
 
