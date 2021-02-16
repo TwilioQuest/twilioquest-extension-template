@@ -1,0 +1,8 @@
+{
+  "name": "twilioquest-extension",
+  "description": "This is a demo extension for TwilioQuest.",
+  "version": "0.0.1",
+  "engines": {
+    "twilioquest": "3.1.44"
+  }
+}
