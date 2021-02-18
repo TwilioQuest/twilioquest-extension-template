@@ -76,6 +76,10 @@ Some developers may package up their extension ahead of time in a zip file that 
 ### Using an extension
 After installing through one of the methods above, your extension should immediately be ready to use! While it shouldn't be strictly necessary, some extensions may require that you restart the TwilioQuest game client before they start working properly.
 
+[<< TO TABLE OF CONTENTS](#twilioquest-extension-template)
+
+<hr/>
+
 ## Creating an Extension
 To create your own content for TwilioQuest, you will need to create an extension project. For that purpose, we recommend using this repository as a template, and creating your own copy of it to host on GitHub.
 
@@ -118,8 +122,14 @@ TODO
 - Music and sound effects
 - Distributing your extension to players
 
+[<< TO TABLE OF CONTENTS](#twilioquest-extension-template)
+
+<hr/>
+
 ## Extension Development Help
 The TwilioQuest extension authoring tools are under active development, and we welcome your feedback! Join us [on Discord](https://twil.io/tq-discord) in the `#extension-dev` channel.
+
+[<< TO TABLE OF CONTENTS](#twilioquest-extension-template)
 
 ## License
 [This template](https://github.com/TwilioQuest/twilioquest-extension-template) is open source under the MIT license.
