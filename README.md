@@ -33,7 +33,7 @@ In the `Settings` UI (press the `3` key in-game), navigate to the `Extensions` s
 
 **IMPORTANT NOTE:** As indicated in the UI, make sure to only use extensions from trusted sources. Like "mods" from other games you may have played before (Minecraft, Skyrim, etc.), a TwilioQuest extension will be able to execute code on your computer. Exercise caution when installing an extension, just as you would using any third-party code on your computer.
 
-Once you have enabled extensions, specify a folder on your computer where you will download and manage extensions. This should be the [full path name](https://en.wikipedia.org/wiki/Fully_qualified_name#Filenames_and_paths) to an empty folder on your computer (you should create such a folder first, if you haven't already).
+Once you have enabled extensions, specify a folder on your computer where you will download and manage extensions. This should be the [full path](https://en.wikipedia.org/wiki/Fully_qualified_name#Filenames_and_paths) to an empty folder on your computer (you should create such a folder first, if you haven't already).
 
 ![Specify a folder path for extensions](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Fext-folder.png?alt=media&token=4936dd5c-d84c-459e-9179-4c545a64b297)
 
