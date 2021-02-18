@@ -1,0 +1,21 @@
+{
+  "title": "Mission Template",
+  "description": "This mission template should get you up and running quickly!",
+  "events": "mission-template/events.js",
+  "default_map": "mission-template/default.json",
+  "mission_icon": "mission_icon.png",
+  "is_mission": true,
+  "priority": 1,
+  "backgroundMusic": "hackertheme_104771b",
+  "backgroundEffect": {
+    "key": "starfield",
+    "options": {
+      "baseSpeed": 0.03,
+      "direction": "topToBottom"
+    }
+  },
+  "flavorTextOverrides": {
+    "bookshelf": "There's nothing like a good book."
+  },
+  "objectives": ["mission-template/example-objective"]
+}
