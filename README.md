@@ -116,6 +116,7 @@ TODO
 - Managing game world state
 - Adding custom tile maps
 - Music and sound effects
+- Distributing your extension to players
 
 ## Extension Development Help
 The TwilioQuest extension authoring tools are under active development, and we welcome your feedback! Join us [on Discord](https://twil.io/tq-discord) in the `#extension-dev` channel.
