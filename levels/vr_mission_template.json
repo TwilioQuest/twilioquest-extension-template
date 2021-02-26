@@ -1,0 +1,20 @@
+{
+  "title": "VR Mission Template",
+  "description": "This is an example of how to create a 'training mission' for the VR training environment aboard the Fog Owl!",
+  "events": "vr_mission_template/events.js",
+  "default_map": "vr_mission_template/default.json",
+  "mission_icon": "mission_icon.png",
+  "is_mission": true,
+  "priority": 1,
+  "backgroundMusic": "hackertheme_104771b",
+  "backgroundEffect": {
+    "key": "vr",
+    "options": {}
+  },
+  "flavorTextOverrides": {
+    "bookshelf": "There's nothing like a good book."
+  },
+  "objectives": [
+    "vr_mission_template/example_objective"
+  ]
+}
