@@ -1,29 +1,21 @@
-# Another Dimension
+# Example Objective
 
 <div class="aside">
 <h3>To-Do List</h3>
 <ul>
-  <li>Check out the resources provided and learn about 2D arrays.</li>
-  <li>Answer the questions on the right and click <em>HACK</em>.</li>
+  <li>It's good to keep high level tasks here.</li>
+  <li>Let players know when to click <em>HACK</em>.</li>
 </ul>
 </div>
 
-Inside one of the secure cargo holds in the **Infinite Loop**, you find one of the security nodes you need to disable to reach the TwilioQuest program's electrical engineer. 
+Give players a little bit of information about what they need to do to hack past this objective. If you find yourself writing more than a few short paragraphs of text, it's likely your objective is too big!
 
-This node is currently locked down because of two incorrectly configured environment variables, which are contained within a **two-dimensional array**.
+## You can make sub headers with more information
 
-You'll need to assign the right values for these variables in order to hack the node and retrieve the missing index for the **Infinite Loop** master password.
-
-## Understanding 2D arrays
-
-To complete this challenge, consider the following [two-dimensional array](https://medium.com/javascript-in-plain-english/javascript-multi-dimensional-arrays-7186e8edd03).
+Some times you wan to talk about additional concepts beyond the high level goal that might help players accomplish the high level goal.
 
 ```js
-const twoDimensionalArray = [
-  ['dogs', 'cats', 'zebras'],
-  ['pizza', 'tacos', 'kale'],
-  ['baseball', 'football', 'hockey']
-];
+const areCodeSamplesVeryHelpful = true;
 ```
 
-The text fields on the right ask you for the values at two different indexes. Once you work out what those values are, enter them in the appropriate fields and click the *HACK* button.
+Describe the final values for your player one last time. Then ask them to click the _HACK_ button.

@@ -1,18 +1,18 @@
 {
-  "title": "JavaScript Lab: Another Dimension",
-  "description": "Did you know that the items inside an array can be <strong>other arrays</strong>? Learn about this array inception in this objective!",
+  "title": "Example Objective",
+  "description": "This is what an <strong>objective description</strong> looks like!",
   "validation_fields": [
     {
       "name": "answer1",
       "type": "text",
       "placeholder": "",
-      "label": "In the 2D array in the objective, what value is at index [0][0]?"
+      "label": "You can request a text input question!"
     },
     {
       "name": "answer2",
       "type": "text",
       "placeholder": "",
-      "label": "In the 2D array in the objective, what value is at index [2][2]?"
+      "label": "You can ask for more than one!"
     }
   ],
   "rewards": {
