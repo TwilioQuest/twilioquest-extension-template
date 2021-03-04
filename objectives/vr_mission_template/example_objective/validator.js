@@ -1,32 +1,48 @@
-module.exports = async helper => {
-  try {
-    const { answer1, answer2 } = helper.validationFields;
-    
-    if (!answer1 || answer1.trim() !== 'dogs') {
-      return helper.fail(`
-        The first answer is incorrect. What array is at index zero of the 
-        array in the objective? What is the value at index zero of *that* array?
-      `);
-    }
+/*
+In your validation code, you can require core Node.js modules,
+third-party modules from npm, or your own code, just like a regular
+Node.js module (since that's what this is!)
+*/
+const assert = require('assert');
+const R = require('ramda');
+const { isTwilio } = require('../../lib/example_helper');
 
-    if (!answer2 || answer2.trim() !== 'hockey') {
-      return helper.fail(`
-        The second answer is incorrect. What array is at index 2 of the 
-        array in the objective? What is the value at index 2 of *that* array?
-      `);
-    }
+/*
+Objective validators export a single function, which is passed a helper
+object. The helper object contains information passed in from the game UI,
+such as what the player entered into the fields in the hack interface.
 
-    helper.success(`
-      That did it! You hack the security node, and an index for the 
-      <span class="highlight">sixth and final character</span> in the Infinite Loop's 
-      master password appears:<br/><br/>
-      <span class="highlight">[0][2]</span>
-      <br/><br/>
-      This is one of six indexes total you will need to discover the password.
-    `);
-  } catch (e) {
-    helper.fail(`
-      There was an error processing the password.
+The helper object also has "success" and "fail" callback functions - use
+these functions to let the game (and the player) know whether or not they 
+have completed the challenge as instructed.
+*/
+module.exports = async function(helper) {
+  // We start by getting the user input from the helper
+  const { answer1, answer2 } = helper.validationFields;
+
+  // Next, you test the user input - fail fast if they get one of the
+  // answers wrong, or some aspect is wrong! Don't provide too much
+  // negative feedback at once, have the player iterate.
+  if (!answer1 || !isTwilio(answer1)) {
+    return helper.fail(`
+      The answer to the first question is incorrect. The company that
+      makes TwilioQuest starts with a "T" and ends with a "wilio".
     `);
   }
+
+  // You can use npm or core Node.js dependencies in your validators!
+  try {
+    assert.strictEqual(R.add(2, 2), Number(answer2));
+  } catch(e) {
+    return helper.fail(`
+      The second answer you provided was either not a number, or not the
+      correct response for "what is 2 + 2".
+    `);
+  }
+
+  // The way we usually write validators is to fail fast, and then if we reach
+  // the end, we know the user got all the answers right!
+  helper.success(`
+    Hooray! You did it!
+  `)
 };

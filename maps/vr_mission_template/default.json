@@ -129,6 +129,18 @@
                  "width":24,
                  "x":576,
                  "y":180
+                }, 
+                {
+                 "height":0,
+                 "id":89,
+                 "name":"player_entry_dev",
+                 "point":true,
+                 "rotation":0,
+                 "type":"player",
+                 "visible":true,
+                 "width":0,
+                 "x":366,
+                 "y":438
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -176,7 +188,7 @@
          "y":0
         }],
  "nextlayerid":44,
- "nextobjectid":89,
+ "nextobjectid":90,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",

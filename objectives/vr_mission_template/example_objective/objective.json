@@ -5,14 +5,14 @@
     {
       "name": "answer1",
       "type": "text",
-      "placeholder": "",
-      "label": "You can request a text input question!"
+      "placeholder": "type your answer here",
+      "label": "What is the name of the company that makes TwilioQuest?"
     },
     {
       "name": "answer2",
       "type": "text",
-      "placeholder": "",
-      "label": "You can ask for more than one!"
+      "placeholder": "type your answer here",
+      "label": "What is 2 + 2? Write the numerical response below."
     }
   ],
   "rewards": {
