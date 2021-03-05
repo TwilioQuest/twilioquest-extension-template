@@ -6,10 +6,6 @@ Interested in creating an extension for TwilioQuest? You've come to the right pl
 
 - [Getting Started](#getting-started)
   - [Enabling extensions](#enabling-extensions)
-- [Installing an Extension](#installing-an-extension)
-  - [Installing an extension from git (GitHub)](#installing-an-extension-from-git-github)
-  - [Installing a pre-packaged extension](#installing-a-pre-packaged-extension)
-  - [Using an extension](#using-an-extension)
 - [Creating an Extension](#creating-an-extension)
   - [Working on your extension locally](#working-on-your-extension-locally)
   - [Extension development topics](#extension-development-topics)
@@ -37,48 +33,7 @@ Once you have enabled extensions, specify a folder on your computer where you wi
 
 ![Specify a folder path for extensions](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Fext-folder.png?alt=media&token=4936dd5c-d84c-459e-9179-4c545a64b297)
 
-Once you have enabled extensions, you should see a listing of automatically-installed "base extensions", and a list of any extensions you have installed yourself. Now you are ready to use (or create) an extension!
-
-## Installing an Extension
-To install an extension, you will need to copy/clone/download an extension's contents to the extension folder you created in the [getting started section](#getting-started). An "extension" is just a folder that contains new assets and content for TwilioQuest. The structure of your extension folder might look something like this:
-
-- {your root extension folder}
-  - some-extension
-    - ... a bunch of game assets/folders ...
-    - `package.json`
-  - another-extension
-    - ...a bunch of game assets/folders ...
-    - `package.json`
-  - .bundled
-    - ...this is a hidden directory, shouldn't have to mess with it...
-
-"Installing" an extension is really just creating one of these folders!
-
-### Installing an extension from git (GitHub)
-A common way you might encounter an extension is in an open source code repository on GitHub. In fact, many of the built-in TwilioQuest content [is available this way](https://github.com/TwilioQuest/twilioquest-base). In this case, you might consider [cloning the repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) into your extensions folder:
-
-```bash
-cd /path/to/extensions/folder
-git clone https://github.com/TwilioQuest/twilioquest-base.git
-```
-
-Most extensions probably also require some code/dependencies from [npm](https://www.npmjs.com/). Installing these dependencies will require that you also install [Node.js and npm](https://nodejs.org/en/download/). After installing Node and npm, you should be able to install the extension's dependencies from the command line.
-
-```bash
-cd /path/to/extensions/folder
-cd folder-name-of-extension
-npm install
-```
-
-### Installing a pre-packaged extension
-Some developers may package up their extension ahead of time in a zip file that they may make available for direct download (it will already have their dependencies zipped up inside). In that case, simply download and decompress the extension `.zip` file in the extensions folder. The resulting directory should have a file named `package.json` inside it.
-
-### Using an extension
-After installing through one of the methods above, your extension should immediately be ready to use! While it shouldn't be strictly necessary, some extensions may require that you restart the TwilioQuest game client before they start working properly.
-
-[<< TO TABLE OF CONTENTS](#twilioquest-extension-template)
-
-<hr/>
+Once you have enabled extensions, you should see a listing of automatically-installed "base extensions", and a list of any extensions you have installed yourself. Now you are ready to use create your own extension!
 
 ## Creating an Extension
 To create your own content for TwilioQuest, you will need to create an extension project. For that purpose, we recommend using this repository as a template, and creating your own copy of it to host on GitHub.
@@ -98,7 +53,7 @@ git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 ```
 
-Creating a TwilioQuest extension will probably (though not necessarily) require that you have [Node.js and npm](https://nodejs.org/en/download/) installed. Once you have installed Node.js, you can install the template extensions dependencies with:
+Creating a TwilioQuest extension will require that you have [Node.js and npm](https://nodejs.org/en/download/) installed. Once you have installed Node.js, you can install the template extension's dependencies with:
 
 ```bash
 npm install
