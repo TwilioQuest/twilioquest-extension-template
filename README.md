@@ -33,7 +33,7 @@ Once you have enabled extensions, specify a folder on your computer where you wi
 
 ![Specify a folder path for extensions](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Fext-folder.png?alt=media&token=4936dd5c-d84c-459e-9179-4c545a64b297)
 
-Once you have enabled extensions, you should see a listing of automatically-installed "base extensions", and a list of any extensions you have installed yourself. Now you are ready to use create your own extension!
+Once you have enabled extensions, you should see a listing of automatically-installed "base extensions", and a list of any extensions you have installed yourself. Now you are ready to create your own extension!
 
 ## Creating an Extension
 To create your own content for TwilioQuest, you will need to create an extension project. For that purpose, we recommend using this repository as a template, and creating your own copy of it to host on GitHub.
@@ -42,7 +42,7 @@ To create your own copy of this repository, click the green "Use This Template" 
 
 ![Use this extension template](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Fuse-template.png?alt=media&token=4c662790-e066-45d4-8cdc-ea6c49569356)
 
-Follow the prompts to create your own project [based on our template repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository). 
+Follow the prompts to create your own project [based on our template repo](https://github.com/TwilioQuest/twilioquest-extension-template/generate). 
 
 ### Working on your extension locally
 When you've created your own copy of this template repo, [clone your new repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) into the extensions folder you specified in the game client (see ["Getting Started"](#getting-started) above).
@@ -62,7 +62,10 @@ npm install
 After cloning your extension in the extensions folder, you should be able to see it in the `Extensions` submenu under `Settings` in the game client.
 
 ### Extension development topics
-TODO
+
+**UNDER CONSTRUCTION**
+
+During the early development phase of our content authoring tools, our documentation won't be as robust as it could (and will) be. Until then, we encourage you to install this template extension and explore the features that it adds to the game. Over time, we will update [the template repo](https://github.com/TwilioQuest/twilioquest-extension-template) with more documentation on topics such as the following.
 
 - Extension architecture overview
 - `package.json` and extension global configuration
