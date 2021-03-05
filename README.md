@@ -42,7 +42,7 @@ To create your own copy of this repository, click the green "Use This Template" 
 
 ![Use this extension template](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Fuse-template.png?alt=media&token=4c662790-e066-45d4-8cdc-ea6c49569356)
 
-Follow the prompts to create your own project [based on our template repo](https://github.com/TwilioQuest/twilioquest-extension-template/generate). 
+Follow the prompts to create your own project [based on our template repo](https://github.com/TwilioQuest/twilioquest-extension-template/generate).
 
 ### Working on your extension locally
 When you've created your own copy of this template repo, [clone your new repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) into the extensions folder you specified in the game client (see ["Getting Started"](#getting-started) above).
@@ -60,6 +60,12 @@ npm install
 ```
 
 After cloning your extension in the extensions folder, you should be able to see it in the `Extensions` submenu under `Settings` in the game client.
+
+![Extension template is loaded](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Ftemplate_loaded.png?alt=media&token=b29a60c0-9289-46f3-b6e6-bafa28faa669)
+
+The template extension has a simple VR training level created for you to reference and start hacking on. Interact with the VR Training computer aboard the Fog Owl to load up this sample mission!
+
+![VR training sim mission](https://firebasestorage.googleapis.com/v0/b/twilioquest-prod.appspot.com/o/docs%2Fvr_sim.png?alt=media&token=2b39bb3d-a2a6-4420-9e95-6485b52d35a4)
 
 ### Extension development topics
 
