@@ -97,6 +97,11 @@
                  "point":true,
                  "properties":[
                         {
+                         "name":"hackable",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
                          "name":"objectiveName",
                          "type":"string",
                          "value":"example_objective"
