@@ -69,6 +69,30 @@ The template extension has a simple VR training level created for you to referen
 
 ### Extension development topics
 
+#### Level configuation.json file options
+Configuration properties for your level are editable in `levels/<level_name>.json`. Here is a breakdown of all the components of `<level_name>.json`:
+
+* `title (String)`: displayed title for the level (used in Mission Computer)
+* `description (String)`: text description of the level (used in Mission Computer)
+* `is_mission (Boolean)`: Set to `true` if this level should appear in the Mission Computer
+* `prereqs (Array<String>)`: A list of objectives from other missions that must be completed before this mission is playable. Each string in this list contains a mission folder name concatenated with an objective folder name. Example: `["basic_training.basic3", "basic_training.basic4"]` - this means that in order to play this mission, you need to complete the objectives in `basic3` and `basic4` in the `basic_training` mission.
+* `flavorTextOverrides (Object<String>)`: set flavor text overrides for this level. If an in Tiled TileObject has the corresponding `flavorText` property string as a key in this object, the HTML text specified here will override the interaction text pop up.
+* `backgroundMusic (String)`: the key of the background music track to play for this mission. It should be the `basename` of a track found in `public/levels/common/music`.
+* `backgroundEffect (Object)`: specify the background effect of this level that will be shown behind transparent tiles left open in Tiled.
+  * `key (String)`: the name of the effect to be used. e.g. "starfield" or "vr"
+  * `options (Object)`: some effects have options that allow them to be customized
+
+##### Background Effects
+* key: `starfield`
+
+  options:
+  | option | type | values | default | notes |
+  | --- | --- | --- | --- | --- |
+  | ySpeed | Array[Numbers] | <[ConstantSpeed] \| [MinSpeed, MaxSpeed]> | [4, 8] | An array specifying the min and max y speed of the stars in the field. If only one value is provided, all stars are the same speed |
+  | rotationSpeed | Number | (-Infinity, Infinity) | 0 | Speed of starfield rotation in radians per frame. Small numbers are appropriate (e.g. 0.0001)! |
+  | starCount | Number | (0, Infinity) | 400 | Quantity of stars in the field. Increasing this number will increase the visual density of the stars on screen. |
+* key: `vr`
+
 **UNDER CONSTRUCTION**
 
 During the early development phase of our content authoring tools, our documentation won't be as robust as it could (and will) be. Until then, we encourage you to install this template extension and explore the features that it adds to the game. Over time, we will update [the template repo](https://github.com/TwilioQuest/twilioquest-extension-template) with more documentation on topics such as the following.
