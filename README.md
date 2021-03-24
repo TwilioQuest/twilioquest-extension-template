@@ -93,6 +93,14 @@ Configuration properties for your level are editable in `levels/<level_name>.jso
   | starCount | Number | (0, Infinity) | 400 | Quantity of stars in the field. Increasing this number will increase the visual density of the stars on screen. |
 * key: `vr`
 
+### Example Gists
+
+#### Objective Validator.js Examples
+- [Doing URL validation](https://gist.github.com/rmkubik/db54a3ace509fe4e0ffec6f008e8588d)
+- [Making async network request to validate a GitHub account, stores the GitHub account name as an environment variable, and displays an image in the helper.success reponse](https://gist.github.com/rmkubik/9898f63e4ace00093b593d16b24d4c52)
+- [Requesting the path to a Python runtime from the user, validating it works, and storing it in an environment variable](https://gist.github.com/kwhinnery/60254c09b579c2bf89c7f56899273fe7)
+- [Using a stored Python runtime to evaluate code written by a user in Python](https://gist.github.com/kwhinnery/6ae2f25562b8eace9aa049084bbcacc1)
+
 **UNDER CONSTRUCTION**
 
 During the early development phase of our content authoring tools, our documentation won't be as robust as it could (and will) be. Until then, we encourage you to install this template extension and explore the features that it adds to the game. Over time, we will update [the template repo](https://github.com/TwilioQuest/twilioquest-extension-template) with more documentation on topics such as the following.
