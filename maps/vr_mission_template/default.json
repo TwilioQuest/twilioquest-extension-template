@@ -91,29 +91,6 @@
                  "y":186
                 }, 
                 {
-                 "height":0,
-                 "id":24,
-                 "name":"chest",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"hackable",
-                         "type":"bool",
-                         "value":true
-                        }, 
-                        {
-                         "name":"objectiveName",
-                         "type":"string",
-                         "value":"example_objective"
-                        }],
-                 "rotation":0,
-                 "type":"chest",
-                 "visible":true,
-                 "width":0,
-                 "x":372,
-                 "y":372
-                }, 
-                {
                  "height":12,
                  "id":81,
                  "name":"exit",
@@ -146,6 +123,18 @@
                  "width":0,
                  "x":366,
                  "y":438
+                }, 
+                {
+                 "gid":10002,
+                 "height":24,
+                 "id":91,
+                 "name":"",
+                 "rotation":0,
+                 "type":"chest-red",
+                 "visible":true,
+                 "width":24,
+                 "x":371,
+                 "y":394
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -193,7 +182,7 @@
          "y":0
         }],
  "nextlayerid":44,
- "nextobjectid":90,
+ "nextobjectid":96,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.4.3",
@@ -211,6 +200,10 @@
          "tilecount":10000,
          "tileheight":24,
          "tilewidth":24
+        }, 
+        {
+         "firstgid":10001,
+         "source":"..\/..\/..\/.bundled\/tilesets\/TwilioQuestObjects.json"
         }],
  "tilewidth":24,
  "type":"map",
