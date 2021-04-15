@@ -15,6 +15,7 @@
     "bookshelf": "There's nothing like a good book."
   },
   "objectives": [
-    "vr_mission_template/example_objective"
+    "vr_mission_template/example_objective",
+    "vr_mission_template/example_objective2"
   ]
 }
