@@ -1,4 +1,4 @@
-const createObjectiveCompletionResponderConfig = require("../../../.bundled/scripts/objectiveCompletionResponder");
+const createObjectiveCompletionResponderConfig = require("../../scripts/objectiveCompletionResponder");
 
 module.exports = {
   ...createObjectiveCompletionResponderConfig(),
