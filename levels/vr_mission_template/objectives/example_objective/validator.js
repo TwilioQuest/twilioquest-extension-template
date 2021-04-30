@@ -3,9 +3,9 @@ In your validation code, you can require core Node.js modules,
 third-party modules from npm, or your own code, just like a regular
 Node.js module (since that's what this is!)
 */
-const assert = require('assert');
-const R = require('ramda');
-const { isTwilio } = require('../../lib/example_helper');
+const assert = require("assert");
+const R = require("ramda");
+const { isTwilio } = require("../lib/example_helper");
 
 /*
 Objective validators export a single function, which is passed a helper
@@ -16,7 +16,7 @@ The helper object also has "success" and "fail" callback functions - use
 these functions to let the game (and the player) know whether or not they 
 have completed the challenge as instructed.
 */
-module.exports = async function(helper) {
+module.exports = async function (helper) {
   // We start by getting the user input from the helper
   const { answer1, answer2 } = helper.validationFields;
 
@@ -33,7 +33,7 @@ module.exports = async function(helper) {
   // You can use npm or core Node.js dependencies in your validators!
   try {
     assert.strictEqual(R.add(2, 2), Number(answer2));
-  } catch(e) {
+  } catch (e) {
     return helper.fail(`
       The second answer you provided was either not a number, or not the
       correct response for "what is 2 + 2".
@@ -44,5 +44,5 @@ module.exports = async function(helper) {
   // the end, we know the user got all the answers right!
   helper.success(`
     Hooray! You did it!
-  `)
+  `);
 };

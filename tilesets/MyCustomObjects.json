@@ -1,4 +1,12 @@
 { "columns":0,
+ "editorsettings":
+    {
+     "export":
+        {
+         "format":"",
+         "target":"."
+        }
+    },
  "grid":
     {
      "height":1,
@@ -14,13 +22,12 @@
  "tiles":[
         {
          "id":0,
-         "image":"..\/objects\/lights-green\/icon.png",
+         "image":"..\/objects\/light-green\/icon.png",
          "imageheight":24,
          "imagewidth":24,
          "objectgroup":
             {
              "draworder":"index",
-             "id":2,
              "name":"",
              "objects":[
                     {
