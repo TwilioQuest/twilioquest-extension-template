@@ -1,0 +1,33 @@
+conversation(display_name="Corey")
+  case lastResponse
+    when "nice_to_meet"
+    when "you_seem_nice"
+      statement#final
+      responses
+
+    when "who_are_you"
+      statement#corey
+      responses
+        response#nice_to_meet.
+          Nice to meet you!
+        response#you_seem_nice.
+          You seem nice!
+
+    default
+      statement#default
+      responses
+        response#who_are_you.
+          Hello, who are you?
+
+  statements
+    statement#default
+      text.
+        Welcome aboard the #[span.highlight Fog Owl!]
+      speech.
+        Welcome aboard the #[break(strength="medium")] Fog Owl!
+    statement#corey
+      text.
+        Hi there! My name is Corey.
+    statement#final
+      text.
+        Thank you!

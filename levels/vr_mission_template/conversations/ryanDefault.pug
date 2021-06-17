@@ -1,0 +1,33 @@
+conversation(display_name="Ryan")
+  case lastResponse
+    when "nice_to_meet"
+    when "you_seem_nice"
+      statement#final
+      responses
+
+    when "who_are_you"
+      statement#ryan
+      responses
+        response#nice_to_meet.
+          Nice to meet you!
+        response#you_seem_nice.
+          You seem nice!
+
+    default
+      statement#default
+      responses
+        response#who_are_you.
+          Hello, who are you?
+
+  statements
+    statement#default
+      text.
+        My name is Ryan. I am using a custom avatar image from "images/conversations". Neat, huh?
+      speech.
+        Welcome aboard the #[break(strength="medium")] Fog Owl!
+    statement#ryan
+      text.
+        ...as previously mentioned, my name is Ryan?
+    statement#final
+      text.
+        Thank you!
