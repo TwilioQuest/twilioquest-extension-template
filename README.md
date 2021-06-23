@@ -4,13 +4,21 @@ Interested in creating an extension for TwilioQuest? You've come to the right pl
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Getting Started](#getting-started)
-  - [Enabling extensions](#enabling-extensions)
-- [Creating an Extension](#creating-an-extension)
-  - [Working on your extension locally](#working-on-your-extension-locally)
-  - [Extension development topics](#extension-development-topics)
-- [Extension Development Help](#extension-development-help)
-- [License](#license)
+- [TwilioQuest Extension Template](#twilioquest-extension-template)
+  - [Getting Started](#getting-started)
+    - [Enabling extensions](#enabling-extensions)
+  - [Creating an Extension](#creating-an-extension)
+    - [Working on your extension locally](#working-on-your-extension-locally)
+    - [Extension development topics](#extension-development-topics)
+      - [Level configuation.json file options](#level-configuationjson-file-options)
+        - [Background Effects](#background-effects)
+    - [Example Gists](#example-gists)
+      - [Objective Validator.js Examples](#objective-validatorjs-examples)
+  - [Sharing your Extension](#sharing-your-extension)
+    - [Enable GitHub Actions](#enable-github-actions)
+    - [Create a Release](#create-a-release)
+  - [Extension Development Help](#extension-development-help)
+  - [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -117,6 +125,26 @@ During the early development phase of our content authoring tools, our documenta
 - Adding custom tile maps
 - Music and sound effects
 - Distributing your extension to players
+  
+## Sharing your Extension
+Other TwilioQuest players can install your extension by following the steps in [Enabling Extensions](#enabling-extensions) on their own machines, and then placing your extension in the folder they specified for extensions.
+
+A player may have to install any dependencies before they can use your extension. This repository includes a [GitHub Action workflow](/.github/workflows/release.yml) that will install any Javascript dependencies, and publish a ready to use zip file of your extension as a [Release](/releases).
+
+Please note that the workflow by default only installs and bundles Javascript dependencies. If you are using other language ecosystems in your extension, those dependencies will not be included by default, but you can add your own build steps to the workflow.
+
+Follow the steps below to use the workflow to publish your extension:
+
+### Enable GitHub Actions
+
+- Open the [Actions](/actions) tab on the repository.
+- Follow the prompt to enable GitHub Actions for the repository.
+
+### Create a Release
+
+- A release is created on [tagged](https://git-scm.com/book/en/v2/Git-Basics-Tagging) pushes.
+- The tag must be a version number, representing the version of the extension, following [SemVer](https://semver.org/), for example `v1.0.0`.
+- When a push is made with a valid tag, the GitHub Action will create a release and add it to the [Releases](/releases) tab. The release can be edited, to add information such as changelogs or patchnotes.
 
 [<< TO TABLE OF CONTENTS](#twilioquest-extension-template)
 

@@ -1,0 +1,59 @@
+name: Release Extension
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    name: 📦 Build Extension
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macOS-latest, ubuntu-18.04, windows-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        run: npm install
+      - name: Create extension zip (Mac)
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          zip -r ${{github.event.repository.name}}-macos.zip .
+      - name: Create extension zip (Linux)
+        if: runner.os == 'Linux'
+        shell: bash
+        run: |
+          zip -r ${{github.event.repository.name}}-linux.zip .
+      - name: Create extension zip (Windows)
+        if: runner.os == 'Windows'
+        shell: powershell
+        run: |
+          Compress-Archive -Path ${Env:GITHUB_WORKSPACE} -DestinationPath ${{github.event.repository.name}}-windows.zip
+      - uses: actions/upload-artifact@v2
+        with:
+          path: ${{github.event.repository.name}}-*.zip
+  
+  release:
+    name: 🚀 Create Release
+    runs-on: ubuntu-18.04
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Get Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          path: dist/
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            dist/artifact/${{github.event.repository.name}}-linux.zip
+            dist/artifact/${{github.event.repository.name}}-macos.zip
+            dist/artifact/${{github.event.repository.name}}-windows.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
