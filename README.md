@@ -137,7 +137,7 @@ Follow the steps below to use the workflow to publish your extension:
 
 ### Enable GitHub Actions
 
-- Open the [Actions](/actions) tab on the repository.
+- Open the [Actions](/../../actions) tab on the repository.
 - Follow the prompt to enable GitHub Actions for the repository.
 
 ### Create a Release
