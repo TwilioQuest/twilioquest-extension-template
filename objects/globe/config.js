@@ -6,12 +6,16 @@ module.exports = {
       if (self === event.target) {
         // use this to target our single viewpoint
         world.forEachEntities("viewpoint", async (viewpoint) => {
+          world.disablePlayerMovement();
+
           await world.tweenCameraToPosition({
             x: viewpoint.startX,
             y: viewpoint.startY,
           });
           await world.wait(3000);
           await world.tweenCameraToPlayer();
+
+          world.enablePlayerMovement();
         });
       }
     },
