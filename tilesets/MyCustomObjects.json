@@ -55,7 +55,6 @@
          "objectgroup":
             {
              "draworder":"index",
-             "id":2,
              "name":"",
              "objects":[
                     {
@@ -75,6 +74,12 @@
              "x":0,
              "y":0
             },
+         "properties":[
+                {
+                 "name":"interactable",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"globe"
         }],
  "tilewidth":24,
