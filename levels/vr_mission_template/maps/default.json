@@ -171,7 +171,7 @@
                  "y":378
                 }, 
                 {
-                 "gid":10014,
+                 "gid":10016,
                  "height":24,
                  "id":105,
                  "name":"",
@@ -183,7 +183,7 @@
                  "y":348
                 }, 
                 {
-                 "gid":10014,
+                 "gid":10016,
                  "height":24,
                  "id":106,
                  "name":"",
@@ -195,7 +195,7 @@
                  "y":348
                 }, 
                 {
-                 "gid":10014,
+                 "gid":10016,
                  "height":24,
                  "id":107,
                  "name":"",
@@ -207,7 +207,7 @@
                  "y":430
                 }, 
                 {
-                 "gid":10014,
+                 "gid":10016,
                  "height":24,
                  "id":108,
                  "name":"",
@@ -219,7 +219,7 @@
                  "y":430
                 }, 
                 {
-                 "gid":10026,
+                 "gid":10028,
                  "height":32,
                  "id":117,
                  "name":"",
@@ -237,7 +237,7 @@
                  "y":264
                 }, 
                 {
-                 "gid":10016,
+                 "gid":10018,
                  "height":32,
                  "id":118,
                  "name":"",
@@ -249,7 +249,7 @@
                  "y":274
                 }, 
                 {
-                 "gid":10018,
+                 "gid":10020,
                  "height":32,
                  "id":119,
                  "name":"",
@@ -267,7 +267,7 @@
                  "y":262
                 }, 
                 {
-                 "gid":10024,
+                 "gid":10026,
                  "height":32,
                  "id":120,
                  "name":"",
@@ -348,11 +348,11 @@
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestObjects.json"
         }, 
         {
-         "firstgid":10014,
+         "firstgid":10016,
          "source":"..\/..\/..\/tilesets\/MyCustomObjects.json"
         }, 
         {
-         "firstgid":10015,
+         "firstgid":10017,
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestNPCs.json"
         }],
  "tilewidth":24,
