@@ -8,8 +8,8 @@
  "margin":0,
  "name":"MyCustomObjects",
  "spacing":0,
- "tilecount":1,
- "tiledversion":"1.5.0",
+ "tilecount":2,
+ "tiledversion":"1.6.0",
  "tileheight":24,
  "tiles":[
         {
@@ -46,8 +46,43 @@
                  "value":"example_objective"
                 }],
          "type":"light-green"
+        }, 
+        {
+         "id":1,
+         "image":"..\/objects\/globe\/icon.png",
+         "imageheight":24,
+         "imagewidth":24,
+         "objectgroup":
+            {
+             "draworder":"index",
+             "name":"",
+             "objects":[
+                    {
+                     "height":8,
+                     "id":1,
+                     "name":"",
+                     "rotation":0,
+                     "type":"",
+                     "visible":true,
+                     "width":9,
+                     "x":7,
+                     "y":16
+                    }],
+             "opacity":1,
+             "type":"objectgroup",
+             "visible":true,
+             "x":0,
+             "y":0
+            },
+         "properties":[
+                {
+                 "name":"interactable",
+                 "type":"bool",
+                 "value":true
+                }],
+         "type":"globe"
         }],
  "tilewidth":24,
  "type":"tileset",
- "version":1.5
+ "version":"1.6"
 }
