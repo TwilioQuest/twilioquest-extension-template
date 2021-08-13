@@ -1,0 +1,16 @@
+{
+  "title": "Destination Template",
+  "description": "This is an example of how to create a destination in the nav map aboard the Fog Owl!",
+  "questTitle": "A New World",
+  "questDescription": "This level will show in the nav map! Neat, huh?",
+  "navMap": {
+    "x": 10,
+    "y": 80,
+    "sprite": "nav_map/example_planet.png"
+  },
+  "is_mission": false,
+  "priority": 3,
+  "backgroundMusic": "fascinatingarea_108253b",
+  "flavorTextOverrides": {},
+  "objectives": []
+}
