@@ -5,7 +5,7 @@
   "questDescription": "Example level for VR training. See what's possible!",
   "mission_icon": "mission_icon.png",
   "is_mission": true,
-  "priority": 1,
+  "priority": 10,
   "backgroundMusic": "hackertheme_104771b",
   "backgroundEffect": {
     "key": "vr",
