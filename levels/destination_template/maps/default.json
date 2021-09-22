@@ -132,7 +132,7 @@
  "nextobjectid":128,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.7.2",
+ "tiledversion":"1.6.0",
  "tileheight":24,
  "tilesets":[
         {
@@ -153,11 +153,11 @@
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestObjects.json"
         }, 
         {
-         "firstgid":10016,
+         "firstgid":11017,
          "source":"..\/..\/..\/tilesets\/MyCustomObjects.json"
         }, 
         {
-         "firstgid":10018,
+         "firstgid":11019,
          "source":"..\/..\/..\/..\/.bundled\/tilesets\/TwilioQuestNPCs.json"
         }],
  "tilewidth":24,
