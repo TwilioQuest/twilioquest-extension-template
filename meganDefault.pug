@@ -1,0 +1,33 @@
+conversation(display_name="Megan")
+  case lastResponse
+    when "nice_to_meet"
+    when "you_seem_nice"
+      statement#final
+      responses
+
+    when "who_are_you"
+      statement#megan
+      responses
+        response#nice_to_meet.
+          はじめまして！
+        response#you_seem_nice.
+          よろしく！
+
+    default
+      statement#default
+      responses
+        response#who_are_you.
+          こんにちは。君は誰？
+
+  statements
+    statement#default
+      text.
+        #[span.highlight Fog Owl]へようこそ！
+      speech.
+        #[break(strength="medium")] Fog Owlへようこそ！
+    statement#megan
+      text.
+        こんにちは。Meganと申します。
+    statement#final
+      text.
+        ありがとう！

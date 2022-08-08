@@ -1,0 +1,33 @@
+conversation(display_name="Ryan")
+  case lastResponse
+    when "nice_to_meet"
+    when "you_seem_nice"
+      statement#final
+      responses
+
+    when "who_are_you"
+      statement#ryan
+      responses
+        response#nice_to_meet.
+          はじめまして！
+        response#you_seem_nice.
+          よろしく！
+
+    default
+      statement#default
+      responses
+        response#who_are_you.
+          こんにちは。君は誰？
+
+  statements
+    statement#default
+      text.
+        私はRyanです。「images/conversations」 からカスタムアバター画像を使用している。いいね？
+      speech.
+        #[break(strength="medium")] Fog Owlへようこそ！
+    statement#ryan
+      text.
+        ...先に述べたように、私の名前はRyanです。
+    statement#final
+      text.
+       ありがとう！

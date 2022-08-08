@@ -1,0 +1,18 @@
+{
+  "title": "VRミッションテンプレート",
+  "description": "これは、Fog OwlにVRトレーニング環境の「トレーニングミッション」を作成するための例です。",
+  "questTitle": "バーチャルリアリティトレーニング",
+  "questDescription": "VRトレーニング用のレベル例です。可能性を見る!",
+  "mission_icon": "mission_icon.png",
+  "is_mission": true,
+  "priority": 10,
+  "backgroundMusic": "hackertheme_104771b",
+  "backgroundEffect": {
+    "key": "vr",
+    "options": {}
+  },
+  "flavorTextOverrides": {
+    "bookshelf": "良い本に勝るものはない。"
+  },
+  "objectives": ["example_objective", "example_objective2"]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "目的の例2",
+  "description": "<strong>目的の描写</strong>とはこういうことです！",
+  "validation_fields": [
+    {
+      "name": "answer1",
+      "type": "text",
+      "placeholder": "答えをここに入力してください",
+      "label": "TwilioQuestを作っている会社の名前は何ですか？"
+    },
+    {
+      "name": "answer2",
+      "type": "text",
+      "placeholder": "答えをここに入力してください",
+      "label": "2＋2とは？数値で答えてください。"
+    }
+  ],
+  "rewards": {
+    "xp": 100
+  }
+}
